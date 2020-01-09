@@ -5,7 +5,7 @@ Created on Mon Nov 25 12:27:13 2019
 @author: mdamelio
 """
 
-import sys
+import sys, os
 import quickfix as fix
 import quickfix50sp2 as fix50
 import logging
@@ -14,7 +14,7 @@ import random
 import string
 from WebSocket.BroadcasterWebsocketServer import BroadcasterWebsocketServer
 
-sys.path.insert(0, 'F:\MESA\DEV\FIX\model')
+sys.path.insert(0, os.path.join(os.path.dirname(sys.path[0]), 'model'))
 
 from logger import setup_logger
 
