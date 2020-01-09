@@ -103,7 +103,6 @@ if __name__=='__main__':
     account = input('Cuenta: ')
     fixMain = main(args.file_name, market, user, passwd, account)
     
-#    fixMain = main(args.file_name, 'ROFX','juanvillarrueldujovne2989','myopwD3*','REM2989')
     fixMain.daemon = True
     fixMain.start()
     
